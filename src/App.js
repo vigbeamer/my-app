@@ -1,6 +1,5 @@
 import "./App.css";
 import userflow from "userflow.js";
-require("dotenv").config();
 
 function App() {
   userflow.init(process.env.REACT_APP_USERFLOW);
