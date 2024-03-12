@@ -23,6 +23,9 @@ function App() {
 
   const router = createBrowserRouter(routes);
   userflow.init(process.env.REACT_APP_USERFLOW);
+  userflow.identify(2, {
+    device_type: window.innerWidth > 800 ? "desktop" : "mobile",
+  });
 
   return (
     <div className="App">
