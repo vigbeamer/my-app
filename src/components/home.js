@@ -16,7 +16,8 @@ const Home = () => {
       </div>
 
       <select id="dropdwn">
-        <option>Select a number</option>
+        <option disabled>Select a number</option>
+        <option selected></option>
         <option value={1}>1</option>
         <option value={2}>2</option>
         <option value={3}>3</option>
