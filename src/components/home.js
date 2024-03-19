@@ -8,14 +8,25 @@ const Home = () => {
 
   return (
     <>
-      <div style={{ background: "blue", padding: 20, color: "white" }}>
-        Sed sed rhoncus quam. Duis tristique dapibus lacus, vitae efficitur
-        metus malesuada ac. Donec consectetur aliquam dolor, vel placerat magna
-        hendrerit at. Fusce quam dolor, imperdiet in mi vitae, tempus imperdiet
-        urna. Mauris ut dignissim ante. In hac habitasse platea dictumst. Donec
-        lobortis dictum nunc, eget dictum lectus imperdiet id. Cras mauris nunc,
-        bibendum et dignissim eu, ornare ut magna. Duis suscipit tempus odio.
-        Proin sit amet luctus massa.
+      <div
+        style={{
+          display: "block",
+          background: "blue",
+          height: 10,
+          padding: 20,
+          color: "white",
+          overflowY: "scroll",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Sed sed rhoncus quam{" "}
+        <button onClick={() => setShow(!show)}>bye bytton</button> Duis
+        tristique dapibus lacus, vitae efficitur metus malesuada ac. Donec
+        consectetur aliquam dolor, vel placerat magna hendrerit at. Fusce quam
+        dolor, imperdiet in mi vitae, tempus imperdiet urna. Mauris ut dignissim
+        ante. In hac habitasse platea dictumst. Donec lobortis dictum nunc, eget
+        dictum lectus imperdiet id. Cras mauris nunc, bibendum et dignissim eu,
+        ornare ut magna. Duis suscipit tempus odio. Proin sit amet luctus massa.
       </div>
 
       <select id="dropdwn">
@@ -26,7 +37,6 @@ const Home = () => {
         <option value={3}>3</option>
       </select>
 
-      <button onClick={() => setShow(!show)}>bye bytton</button>
       {show && (
         <div style={{ height: "30px", width: "30px", background: "red" }}>
           Hey
