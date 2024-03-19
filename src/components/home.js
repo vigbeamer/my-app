@@ -1,7 +1,10 @@
 // import userflow from "userflow.js";
 
+import { useState } from "react";
+
 const Home = () => {
   // userflow.identifyAnonymous();
+  const [show, setShow] = useState();
 
   return (
     <>
@@ -22,6 +25,13 @@ const Home = () => {
         <option value={2}>2</option>
         <option value={3}>3</option>
       </select>
+
+      <button onClick={() => setShow(!show)}>bye bytton</button>
+      {show && (
+        <div style={{ height: "30px", width: "30px", background: "red" }}>
+          Hey
+        </div>
+      )}
     </>
   );
 };
