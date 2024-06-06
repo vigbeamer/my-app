@@ -21,9 +21,9 @@ const Login = () => {
         justifyContent: "center",
         alignItems: "center",
         rowGap: 10,
-        marginTop: "20vh",
         width: "100%",
         height: "100vh",
+        overflow: "hidden",
       }}
     >
       <input
